@@ -1,0 +1,54 @@
+#buttonsCalculator {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  padding: 10px;
+}
+
+#calculator {
+  margin: 0 auto;
+  max-width: 150px;
+
+
+}
+
+#buttonsCalculator::button {
+  border-radius: 2px;
+}
+
+#ac,
+#bs {
+  background-color: tomato;
+  border-radius: 5px;
+}
+
+#equal-sign {
+  background-color: mediumseagreen;
+  border-radius: 5px;
+}
+
+#percentage-sign,
+#divide-sign,
+#multiply-sign,
+#additon-sign,
+#subtraction-sign {
+  background-color: orange;
+  border-radius: 5px;
+}
+
+#displayCalculator {
+  display: flex;
+  align-items: center;
+}
+
+#display-calculator {
+  margin: 0 auto;
+  min-width: 80%;
+}
+
+.grid-item {
+  margin: 0.2em;
+}
+
+h1 {
+  text-align: center;
+}

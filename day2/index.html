@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Basic Calculator</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="style.css" rel="stylesheet">
+  </head>
+  <body>
+    <h1>Basic Calculator</h1>
+    <div id="calculator">
+      <div id="displayCalculator">
+        <input type="text" id="display-calculator" name="display-calculator">
+      </div>
+      <div id="buttonsCalculator">
+        <button id="ac" class="grid-item" onclick="allClear()">AC</button>
+        <button id="bs" class="grid-item" onclick="backspace()">BS</button>
+        <button id="percentage-sign" class="grid-item" onclick="writeInDisplay(this.id)">%</button>
+        <button id="divide-sign" class="grid-item" onclick="writeInDisplay(this.id)">/</button>
+        <button id="7" class="grid-item" onclick="writeInDisplay(this.id)">7</button>
+        <button id="8" class="grid-item" onclick="writeInDisplay(this.id)">8</button>
+        <button id="9" class="grid-item" onclick="writeInDisplay(this.id)">9</button>
+        <button id="multiply-sign" class="grid-item" onclick="writeInDisplay(this.id)">*</button>
+        <button id="4" class="grid-item" onclick="writeInDisplay(this.id)">4</button>
+        <button id="5" class="grid-item" onclick="writeInDisplay(this.id)">5</button>
+        <button id="6" class="grid-item" onclick="writeInDisplay(this.id)">6</button>
+        <button id="subtraction-sign" class="grid-item" onclick="writeInDisplay(this.id)">-</button>
+        <button id="1" class="grid-item" onclick="writeInDisplay(this.id)">1</button>
+        <button id="2" class="grid-item" onclick="writeInDisplay(this.id)">2</button>
+        <button id="3" class="grid-item" onclick="writeInDisplay(this.id)">3</button>
+        <button id="additon-sign" class="grid-item" onclick="writeInDisplay(this.id)">+</button>
+        <button id="0" class="grid-item" onclick="writeInDisplay(this.id)">0</button>
+        <button id="00" class="grid-item" onclick="writeInDisplay(this.id)">00</button>
+        <button id="." class="grid-item" onclick="writeInDisplay(this.id)">.</button>
+        <button id="equal-sign" class="grid-item" onclick="calculate()">=</button>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

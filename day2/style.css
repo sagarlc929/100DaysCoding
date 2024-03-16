@@ -15,23 +15,23 @@
   border-radius: 2px;
 }
 
-#ac,
-#bs {
+.red-color {
   background-color: tomato;
   border-radius: 5px;
 }
 
-#equal-sign {
+.green-color {
   background-color: mediumseagreen;
   border-radius: 5px;
 }
 
-#percentage-sign,
-#divide-sign,
-#multiply-sign,
-#additon-sign,
-#subtraction-sign {
+.orange-color {
   background-color: orange;
+  border-radius: 5px;
+}
+
+.normal-color {
+  background-color: lightgrey;
   border-radius: 5px;
 }
 

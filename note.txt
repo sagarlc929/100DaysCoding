@@ -38,7 +38,7 @@
     Day 38: Create a code snippet manager with syntax highlighting.
     Day 39: Develop a travel planner with itinerary management.
     Day 40: Build a file uploader with progress indicators and drag-and-drop support.
-Day 41: Create a real-time multiplayer game using WebSockets.
+    Day 41: Create a real-time multiplayer game using WebSockets.
     Day 42: Build a social media dashboard for analytics.
     Day 43: Develop a stock market tracker with live data updates.
     Day 44: Create a code snippet manager with syntax highlighting.

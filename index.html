@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Directory Scanner</title>
+</head>
+<body>
+  <h1>Directory Scanner</h1>
+  <input type="file" id="directoryInput" webkitdirectory directory multiple>
+  <ul id="fileList"></ul>
+
+  <script>
+    const directoryInput = document.getElementById('directoryInput');
+    const fileList = document.getElementById('fileList');
+
+    directoryInput.addEventListener('change', handleDirectorySelect);
+
+    function handleDirectorySelect(event) {
+      const files = event.target.files;
+      fileList.innerHTML = ''; // Clear previous file list
+
+      for (let i = 0; i < files.length; i++) {
+        const listItem = document.createElement('li');
+        listItem.textContent = files[i].name;
+        fileList.appendChild(listItem);
+      }
+    }
+  </script>
+</body>
+</html>
+

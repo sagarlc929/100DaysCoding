@@ -1,0 +1,27 @@
+#container-bmi{
+  max-width:16em;
+  width:80%;
+  margin: 0 auto;
+  
+}
+h1{
+  text-align:center;
+}
+#category-result, #BMI-result{
+background-color:hsla(210, 5%, 80%, 0.9);
+}
+fieldset{
+  border-radius:5px;
+}
+#result-bmi{
+  border-radius:5px;
+}
+#weight-input{
+  margin-top :0.5em;
+  background-color:hsla(0, 0%, 90%, 0.7);
+  border-radius: 5px 5px 0 0;
+}
+#height-input{
+  border-radius: 0 0 5px 5px;
+  background-color:hsla(0, 0%, 90%, 0.7);
+}

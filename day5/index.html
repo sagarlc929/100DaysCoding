@@ -1,0 +1,36 @@
+<!--Day 5: Create a temperature converter (Celsius to Fahrenheit and vice versa).-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Temperature Converter</title>
+    <link href="style.css" rel="stylesheet">
+  </head>
+  <body>
+    <h1>Temperature Converter</h1>
+    <div id="temperature-converter">
+      <div id="celsius-container">
+      <fieldset id="celsius-fieldset">
+      <legend>Celsius</legend>
+      <div id="celsius-slider-div">
+        <input type="range" min="-50" class="slider"max="300" id="celsius-slider-element" value="0">
+      </div>
+      <div id="celsius-input">
+        <input id="celsius-input-box" type="number" min="-50" max="300">
+      </div>
+      </fieldset>
+      </div>
+      <fieldset id="fahrenheit-fieldset">
+      <legend>Fahrenheit</legend>
+      <div id="fahrenheit-slider-div">
+        <input type="range" class="slider" id="fahrenheit-slider-element" max="572" min="-58">
+      </div>
+      <div id="fahrenheit-input">
+        <input type="number" id="fahrenheit-input-box" min="-58" max="572">
+      </div>
+      </fieldset>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

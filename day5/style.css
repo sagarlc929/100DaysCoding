@@ -1,0 +1,64 @@
+#temperature-converter{
+background-color:hsla(220, 50%, 80%, 0.9);
+margin: 0 auto;
+width:80%;
+max-width:500px;
+border-radius: 0.5em;
+padding-bottom: 0.5em;
+}
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: hsla(210, 15%, 50%, 0.8);
+  cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: hsla(210, 15%, 50%, 0.8);
+  cursor: pointer;
+}
+h1{
+  text-align: center;
+}
+#celsius-fieldset, #fahrenheit-fieldset{
+border-radius: 0.5em;
+display: grid;
+  grid-template-columns: auto auto;
+}
+input[type="number"]{
+  width:8em;
+}
+input[type="range"]{
+  width:20em;
+  
+}
+.slider {
+  -webkit-appearance: none;
+
+  border-radius: 5px;
+  
+background: rgb(2,0,36);
+background: linear-gradient(90deg, rgba(2,0,36,1) -50%, rgba(0,0,255,1) 0%, rgba(0,114,255,1) 16%, rgba(0,132,40,1) 24%, rgba(242,0,0,1) 40%, rgba(255,0,0,1) 100%, rgba(0,212,255,1) 350%); 
+  outline: none;
+  opacity: 0.7;
+  -webkit-transition: .2s;
+  transition: opacity .2s;
+}
+
+.slider:hover {
+  opacity: 1;
+}
+legend{
+  font-style:italic;
+}
+fieldset{
+border: solid aliceblue;
+}
+
+

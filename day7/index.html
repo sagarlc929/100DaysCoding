@@ -1,0 +1,28 @@
+<!--Day 7: Create a simple countdown timer.-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Countdown Timer</title>
+    <link href="style.css" rel="stylesheet">
+  </head>
+  <body>
+    <div id="countdown-container">
+      <div id="clock-timer-div">
+        <div id="clock-div">
+          <div id="timer-div"></div>
+        </div>
+      </div>
+      <div id="input-div">
+        Min:<input type="number" id="minute-input"min="0" max="59">
+        Sec:<input type="number" id="second-input"min="0" max="59">
+      </div>
+      <div id="button-div">
+        <button id="first-button"></button>
+        <button id="restart" onclick="restartCountdown()">Restart</button>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,47 @@
+html{
+  font-size: 16px;
+}
+#clock-div{
+width:15em;
+height:15em;
+border: 1em solid transparent;
+border-radius: 50%;
+background:linear-gradient(white,white)content-box no-repeat,conic-gradient(tomato 0%, 0, MediumSeagreen) border-box;
+display: flex;
+justify-content: center; /* Center horizontally */ 
+align-items: center;
+margin:1em;
+}
+#countdown-container{
+  width:60%;
+  margin: 0 auto;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+}
+input[type="number"]{
+  width:30%;
+}
+#input-div input{
+margin: 0 1em;
+}
+#input-div{
+  display:flex;
+  justify-content: center;
+  margin: 1em;
+}
+#timer-div{
+  font-size: 2em;
+  text-align:center;
+}
+#restart{
+  background-color:tomato;
+  font-size: 1.5em;
+  border-radius:0.25em;
+}
+#first-button{
+background-color:MediumSeagreen;
+  font-size: 1.5em;
+  border-radius:0.25em;
+}

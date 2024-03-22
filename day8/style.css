@@ -1,0 +1,37 @@
+img{
+  height:min(100px, 2em);
+  border-radius:2px;
+  width:min(100px,2em);
+  object-fit: cover; /* Crop the image to fit its container */
+  object-position: center;
+
+}
+
+.currency-converter-container{
+  border:2px solid grey;
+  max-width:30em;
+  border-radius:0.25em;
+  padding:0.25em;
+  margin:0 auto;
+  display:flex;
+  align-items:center;
+  flex-direction:column;
+background-image: linear-gradient(to bottom right, rgba(0, 123, 255, 0.4), rgba(0, 123, 255, 0.1)); /* Blue gradient */
+}
+
+h1{
+  text-align:center;
+}
+.country-div {
+  grid-template-columns: auto auto auto; /* First column auto-sized for the image, second column takes remaining space */
+  display: grid;
+  align-items: end; /* Center items vertically */
+  grid-template-columns:2em 10em auto;
+  gap: 5px;
+  margin:0.5em;
+  align-items:start;
+}
+.input-element{
+  width:10em;
+}
+

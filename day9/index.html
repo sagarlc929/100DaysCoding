@@ -1,0 +1,39 @@
+<!--Day 9: Make a random quote generator.-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Quote Generator</title>
+    <link href="style.css" rel="stylesheet">
+  </head>
+  <body>
+
+<div class="quote-container">
+    <div class="quote-description">
+      <div>
+        <span class="quote-symbol opacity">" </span>
+      </div>
+      <div class="padding">
+        <p id="quote-author"></p>
+      </div>
+      <div id="quote-div">
+        <span id="quote" class="quote opacity"></span>
+      </div>
+      <div class="bottom"> 
+        <span class="quote-symbol opacity">"</span>
+      </div>
+    </div>
+    <p class="block right-align">
+      <span class="similar-symbol opacity">~</span>
+      <span id="author-name" class="author-name"></span>
+    </p>
+    <div class="center-align">
+      <button class="nextQuote" onclick="displayQuote()">Next Quote</button>
+    </div>
+</div>
+
+
+  <script src="script.js"></script>
+  </body>
+</html>

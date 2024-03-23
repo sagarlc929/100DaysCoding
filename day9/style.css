@@ -1,0 +1,60 @@
+/*
+  <div class="quote-container">
+    <p>
+      <span class="quote-symbol">"</span>
+      <span class="quote"></span>
+      <span class="quote-symbol">"</span>
+      <span  class="block">
+        <span class="similar-symbol">~</span>
+        <span class="author-name"></span>
+      </span>
+  </p>
+  */  
+body{
+  padding:2em;
+}
+.quote-container{
+  background-color:tomato;
+  background-image: linear-gradient(to top left, white, transparent);
+  width:100%;
+  margin:0 auto;
+  border-radius:0.25em;
+  padding:1em;
+}
+.right-align{
+  text-align:end;
+}
+.quote-symbol, .similar-symbol{
+  font-size:1em;
+  font-weight:bold;
+  font-style:italic;
+}
+.center-align{
+  display:flex;
+  justify-content:center;
+}
+button{
+  background-color:MediumSeaGreen;
+  border-radius:0.25em;
+}
+.quote, .author-name{
+  font-size:1em;
+  font-style:italic;
+}
+.opacity{
+opacity:0;
+transition: opacity 1s linear;
+}
+
+.quote-description{
+  display:flex;
+}
+.bottom {
+    position: relative;
+}
+
+.bottom > span {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}

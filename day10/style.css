@@ -1,0 +1,34 @@
+
+
+/* CSS for the table */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  border: 1px solid black;
+  background: linear-gradient(to bottom right, #ffcc00, #ff6666); /* Gradient colors */
+}
+
+/* CSS for table headers */
+th {
+  background-color: #f2f2f2; /* Light gray background */
+  border: 1px solid black;
+  padding: 8px; /* Adjust padding as needed */
+}
+
+/* CSS for table rows */
+tr {
+  border: 1px solid black;
+}
+
+/* CSS for table cells */
+td {
+  padding: 8px; /* Adjust padding as needed */
+  border: 1px solid black;
+}
+#weather-container{
+  margin: 0 auto;
+  width: 80%;
+}
+h1{
+  text-align:center;
+}

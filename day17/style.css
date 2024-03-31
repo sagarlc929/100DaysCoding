@@ -1,0 +1,16 @@
+#done-todos-div>span{
+  color:red;
+}
+.todo-container{
+  background-image: linear-gradient(to bottom right, rgba(0, 123, 255, 0.4), rgba(0, 123, 255, 0.1));
+  border-radius:0.25em;
+  padding:2em;
+  margin:2em auto;
+  max-width:20em;
+  display:flex;
+  flex-direction:column;
+}
+.done-todos-div>div>span{
+  text-decoration:line-through;
+}
+

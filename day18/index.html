@@ -1,0 +1,36 @@
+<!--Day 18: Create a basic expense tracker.-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Basic Expense Tracker</title>
+    <link href="style.css" rel="stylesheet">
+  </head>
+  <body>
+    <div id="expense-tracker-container">
+      <div id="add-btn-div">
+        <button id="addNew" onclick="addNew()">New</button>
+      </div>
+      <div id="log-div"></div>
+      <div id="report-div"></div>
+      <div id="popup-div"style="display:none;">
+        <div><label>Description:<input type="text" id="description"></label></div>
+        <div><label>Amount:<input type="number" id="amount"></label></div>
+        <div><lable>Entry:
+            <select name="entry" id="entry-select">
+              <option value="credit">Credit</option>
+              <option value="debit">Debit</option>
+            </select>
+          </lable>
+        </div>
+        <div><span>Date<input id="date" type="date" name="date"></span></div>
+        <div><span>Time:<input id="time" type="time" name="time"></span></div>
+        <div><span>Remark:<input id="remark" type="text" name="remark"></span></div>
+        <div id="hidden-button-div"><button id="add" onclick="add()">Add</button><button id="cancle" onclick="cancel()">Cancle</button></div>
+      </div>
+      <div id="blur" style="display:none;"></div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

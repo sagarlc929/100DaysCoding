@@ -1,0 +1,43 @@
+body{
+margin:0;
+padding:0;
+font-size:2em;
+}
+#slider-div{
+margin:0.25em auto;
+width:80%;
+}
+img{
+  display:block;
+  width:100%;
+}
+#display-div{
+  display:flex;
+  margin:0 auto;
+  width:100%;
+
+
+}
+#image-div{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  overflow:hidden;
+
+}
+.button-div{
+  display:flex;
+  align-items:center;
+}
+button{
+  margin:0.25em;
+  background-color:#555;
+  color:#ddd;
+  border:none;
+  font-size:2em;
+  padding-bottom:0.25em;
+  border-radius:0.1em;
+}
+#caption-div{
+  text-align:center;
+}

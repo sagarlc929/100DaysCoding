@@ -1,0 +1,38 @@
+.opacity{
+opacity:0;
+transition: opacity 0.5s linear;
+}
+#pass-gen-container{
+  background-image: linear-gradient(to bottom right, rgba(0, 123, 255, 0.4), rgba(0, 123, 255, 0.1));
+  border-radius:0.25em;
+  padding:2em;
+  margin:2em auto;
+  max-width:20em;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+}
+
+#pass-menu{
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+}
+button{margin:0.25em}
+#copy-btn{
+background-image: linear-gradient(to bottom right, rgba(60, 179, 113, 0.6), rgba(0, 123, 255, 0.2));
+border-radius:0.25em;
+}
+#generate-btn{
+border-radius:0.25em;
+background-image: linear-gradient(to bottom right, rgba(0, 123,255 , 0.2), rgba(225, 99, 71, 0.6));
+}
+#length-inp{
+  width:10em;
+}
+#display-div{
+  border-radius:0.25em;
+  background-image: linear-gradient(to bottom right, rgba(60, 179, 113, 1), rgba(155, 99, 71, 1));
+  padding:0.25em;
+  color:#fff;
+}

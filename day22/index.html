@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Task management apllication(drag and drop)</title>
+    <link href="style.css" rel="stylesheet">
+  </head>
+  <body>
+    <div id="task-man-container" class="flex fle-column">
+      <fieldset>
+        <legend>Add Task</legend>
+      <div id="new-task" class="flex fle-column ali-center">
+        <input type="text" id="new-input">
+        <button id="new-btn">Add</button>
+      </div>
+      </fieldset>
+      <div id="div-container" class="flex">
+        <fieldset>
+        <legend>Todo</legend>
+          <div id="todo-div" class="list" ondrop="drop(event)" ondragover="allowDrop(event)" >
+          </div>
+        </fieldset>
+         <fieldset>
+        <legend>Process</legend>
+        <div id="doing-div" class="list" ondrop="drop(event)" ondragover="allowDrop(event)">
+        </div>
+        </fieldset>
+         <fieldset>
+        <legend>Done</legend>
+        <div id="done" class="list" ondrop="drop(event)" ondragover="allowDrop(event)">
+        </div>
+        </fieldset>
+         <fieldset>
+        <legend>Trash</legend>
+        <div id="trash"class="list" ondrop="drop(event)" ondragover="allowDrop(event)">
+        </div>
+        </fieldset>
+      </div>
+      <div id="del-div">
+      <button id="delete">Clean Trash</button>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

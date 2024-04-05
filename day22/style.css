@@ -1,0 +1,72 @@
+.list{
+  width:100%;
+  min-height:40px;
+}
+.flex{
+  display:flex;
+}
+.unselectable {
+  user-select: none;
+}
+.fle-column{
+  flex-direction:column;
+}
+.ali-center{
+  align-items:center;
+}
+
+.task{
+  border-radius:0.25rem;
+  margin:0.5rem;
+  padding:0.25rem;
+  text-align:center;
+  word-wrap:break-word;
+  color:white;
+background-image: linear-gradient(to bottom right, rgba(0, 123, 255, 0.4), rgba(0, 123, 255, 0.1));
+
+}
+.list{
+  border-radius:0.25rem;
+
+}
+#task-man-container{
+max-width:700px;
+margin:0 auto;
+width: 80%;
+}
+
+#todo-div{
+  background-color:rgba(255,99,71,0.8);
+}
+#doing-div{
+  background-color:rgba(30,144,255,0.8);
+}
+#done{
+  background-color:rgba(60, 179, 113,0.8);
+}
+#trash{
+  background-color:#999;
+}
+#del-div{
+  display:flex;
+  justify-content:center;
+}
+#delete{
+  background-color:tomato;
+  border-radius:0.25rem;
+}
+#div-container fieldset{
+  width:25%;
+
+  max-width:25%;
+ box-sizing: border-box;
+}
+#new-task{
+  background-image: linear-gradient(to bottom right, rgba(0, 123, 255, 0.4), rgba(0, 123, 255, 0.1));
+}
+input{
+  margin:0.25rem;
+}
+button{
+  margin:0.25rem;
+}

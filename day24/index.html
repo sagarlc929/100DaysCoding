@@ -1,0 +1,26 @@
+<!-- Day 24: Create a simple game like Tic-Tac-Toe or Hangman. -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Tic-Tac-Toe</title>
+    <link rel="stylesheet" href="./style.css">
+  </head>
+  <body>
+    <div id="container_tic-tac-toe">
+      <button class="box" id="mat-00" position = "00"></button>
+      <button class="box" id="mat-01" position = "01"></button>
+      <button class="box" id="mat-02" position = "02"></button>
+      <button class="box" id="mat-10" position = "10"></button>
+      <button class="box" id="mat-11" position = "11"></button>
+      <button class="box" id="mat-12" position = "12"></button>
+      <button class="box" id="mat-20" position = "20"></button>
+      <button class="box" id="mat-21" position = "21"></button>
+      <button class="box" id="mat-22" position = "22"></button>
+    </div>
+    <div class="popup-hide" id="popup">
+      <h2 id="message"></h2>
+      <button id = "reset" onclick="location.reload()">Restart</button>
+    </div>
+  <script src="script.js"></script>
+  </body>
+</html>

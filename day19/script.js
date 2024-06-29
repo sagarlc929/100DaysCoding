@@ -1,18 +1,3 @@
-/*
-    <div id="pomodoro-container">
-      <div id="display-div">
-        <span id="min-span"></span> Min : <span id="sec-span"></span> Sec
-      </div>
-      <div id="buttons-div">
-        <button id="start-btn">Start</button>
-        <button id="pause-btn">Pause</button>
-        <button id="reset-btn">Reset</button>
-      </div>
-      <div id="info-div"></div>
-    </div>
-*/
-
-
 const minSpan = document.getElementById('min-span');
 const secSpan = document.getElementById('sec-span');
 const startBtn = document.getElementById('start-btn');
@@ -31,55 +16,58 @@ const data = [
 startBtn.addEventListener('click', () => {
     startPomodoro();
 });
-resetBtn.addEventListener('click',()=>{
-  location.reload();
+resetBtn.addEventListener('click', () => {
+    location.reload();
 });
-function showAlert(message){
-  alert(message);
-  return true;
-}
-function myAlert(message){
-  audio.play();
-  if(showAlert(message)){
+
+function showAlert(message) {
+    audio.play();
+    const confirmed = confirm(message);
     audio.pause();
     audio.currentTime = 0;
-  }
-
+    return confirmed;
 }
+
 function startPomodoro() {
     infoDiv.innerText = "First Pomodoro Session."
     startTimer('pomodoro', () => {
-    myAlert(`First Short Break Session for ${data.find(item => item.session === 'shortBreak').duration} minutes`);
-        infoDiv.innerText = "First Short Break Session."
-        startTimer('shortBreak', () => {
-    myAlert(`Second Pomodoro Session for ${data.find(item => item.session === 'pomodoro').duration} minutes`);
-            infoDiv.innerText = "Second Pomodoro Session."
-            startTimer('pomodoro', () => {
-    myAlert(`Second Short Break Session for ${data.find(item => item.session === 'shortBreak').duration} minutes`);
-              infoDiv.innerText = "Second Short Break Session."
-              startTimer('shortBreak', () => {
-    myAlert(`Third Pomodoro Session for ${data.find(item => item.session === 'pomodoro').duration} minutes`);
-                    infoDiv.innerText = "Third Pomodoro Session."
+        if (showAlert(`First Short Break Session for ${data.find(item => item.session === 'shortBreak').duration} minutes`)) {
+            infoDiv.innerText = "First Short Break Session."
+            startTimer('shortBreak', () => {
+                if (showAlert(`Second Pomodoro Session for ${data.find(item => item.session === 'pomodoro').duration} minutes`)) {
+                    infoDiv.innerText = "Second Pomodoro Session."
                     startTimer('pomodoro', () => {
-    myAlert(`Third Short Break Session for ${data.find(item => item.session === 'shortBreak').duration} minutes`);
-                        infoDiv.innerText = "Third Short Break Session."
-                        startTimer('shortBreak', () => {
-    myAlert(`Forth Pomodoro Session for ${data.find(item => item.session === 'pomodoro').duration} minutes`);
-                            infoDiv.innerText = "Fourth Pomodoro Session."
-                            startTimer('pomodoro', () => {
-    myAlert(`Fourth Short Break Session for ${data.find(item => item.session === 'shortBreak').duration} minutes`);
-                                infoDiv.innerText = "Fourth Short Session."
-                                startTimer('shortBreak',()=>{
-    myAlert(`Long Break Session for ${data.find(item => item.session === 'longBreak').duration} minutes`);
-                                  infoDiv.innerText = "Long Break Session."
-                                  startTimer('longBreak');
-                });
+                        if (showAlert(`Second Short Break Session for ${data.find(item => item.session === 'shortBreak').duration} minutes`)) {
+                            infoDiv.innerText = "Second Short Break Session."
+                            startTimer('shortBreak', () => {
+                                if (showAlert(`Third Pomodoro Session for ${data.find(item => item.session === 'pomodoro').duration} minutes`)) {
+                                    infoDiv.innerText = "Third Pomodoro Session."
+                                    startTimer('pomodoro', () => {
+                                        if (showAlert(`Third Short Break Session for ${data.find(item => item.session === 'shortBreak').duration} minutes`)) {
+                                            infoDiv.innerText = "Third Short Break Session."
+                                            startTimer('shortBreak', () => {
+                                                if (showAlert(`Forth Pomodoro Session for ${data.find(item => item.session === 'pomodoro').duration} minutes`)) {
+                                                    infoDiv.innerText = "Fourth Pomodoro Session."
+                                                    startTimer('pomodoro', () => {
+                                                        if (showAlert(`Fourth(final) Long Break Session for ${data.find(item => item.session === 'longBreak').duration} minutes`)) {
+                                                            infoDiv.innerText = "Fourth(final) Long Break Session."
+                                                            startTimer('longBreak', () => {
+                                                                showAlert(`Pomodoro Session Completed.`);
+                                                                	infoDiv.innerText = "Restart the Session."
+                                                            });
+                                                        }
+                                                    });
+                                                }
+                                            });
+                                        }
+                                    });
+                                }
                             });
-                        });
+                        }
                     });
-                });
+                }
             });
-        });
+        }
     });
 }
 
@@ -109,40 +97,3 @@ function startTimer(type, callback) {
         }, 1000);
     }
 }
-
-
-/*
-
-let timer;
-        let seconds = 0;
-        let isRunning = false;
-
-        function displayTimer() {
-            const minutes = Math.floor(seconds / 60);
-            const remainderSeconds = seconds % 60;
-            const display = `${minutes < 10 ? '0' : ''}${minutes}:${remainderSeconds < 10 ? '0' : ''}${remainderSeconds}`;
-            document.getElementById('timer').textContent = display;
-        }
-
-        function startTimer() {
-            if (!isRunning) {
-                isRunning = true;
-                timer = setInterval(() => {
-                    seconds++;
-                    displayTimer();
-                }, 1000);
-            }
-        }
-
-        function pauseTimer() {
-            clearInterval(timer);
-            isRunning = false;
-        }
-
-        function resetTimer() {
-            clearInterval(timer);
-            isRunning = false;
-            seconds = 0;
-            displayTimer();
-        }
-*/

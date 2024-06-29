@@ -80,7 +80,7 @@ function modify(index) {
   amount.value = entry.amount;
   entrySelect.value = entry.entry;
 function formatDate(dateString) {
-    // console.log(dataString);
+  // console.log(dataString);
     // Assuming dateString is in a format like "YYYY-MM-DD"
     const parts = dateString.split('-'); // Split the date string into parts
     //const formattedDate = `${parts[0]}/${parts[1]}/${parts[2]}`; // Format as "MM/DD/YYYY"

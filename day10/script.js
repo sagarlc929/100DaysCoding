@@ -1,5 +1,6 @@
 const weatherContainer = document.getElementById("weather-container");
-const apiUrl = "https://weather.visualcrossing.com/VisualCrossingWebServices/rest/services/timeline/katmandu?unitGroup=us&include=hours&key=57A5KS9YXZK67DPB5YFULRKG2&contentType=json";
+//add api key as follow
+//const apiUrl = "https://weather.visualcrossing.com/VisualCrossingWebServices/rest/services/timeline/katmandu?unitGroup=us&include=hours&***there should be your api key***&contentType=json";
 
 fetch(apiUrl)
   .then(response => {

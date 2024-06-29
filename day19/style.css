@@ -1,11 +1,13 @@
+*{
+font-size: 2rem;
+}
 body{
   margin:0;
+
   padding:0;
    /* background-color:rgba(135, 206, 235, 0.8); */
 }
 #pomodoro-container{
- height:13em;
-  width:15em;
   background-color:rgba(135, 206, 235, 0.8);
   position:absolute;
     top: 50%;

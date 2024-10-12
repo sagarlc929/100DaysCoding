@@ -1,0 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+body{
+ --tw-text-opacity: 1;
+  background-color: rgb(209 213 219 / var(--tw-text-opacity)) /* #d1d5db */;
+}

@@ -1,0 +1,32 @@
+.hide{
+  display:none;
+}
+.show{
+  display: block;
+}
+#popup{
+  background: aqua;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+.contact-btn{
+  width: 2rem;
+  height: 2rem;
+  background-size: cover; /* Adjust as needed */
+  background-repeat: no-repeat;
+  border: none;
+  cursor: pointer;
+  border-radius: 0.5rem;
+
+}
+.call-btn{
+  background-image: url('asset/call-receive-svgrepo-com.svg');
+ }
+.edit-btn{
+ background-image: url('asset/edit-2-svgrepo-com.svg');
+}
+.delete-btn{
+ background-image: url('asset/delete-1-svgrepo-com.svg');
+}

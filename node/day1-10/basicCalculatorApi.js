@@ -12,14 +12,12 @@ const calReqSendErr = (res, message)=>{
 }
 http.createServer((req,res)=>{
   if(req.url === '/' && req.method ==='POST'){
-    console.log(req.url);
     let body = '';
     req.on('data', chunk =>{
       body += chunk.toString();
     });
     req.on('end', ()=>{
       const reqData = JSON.parse(body);
-      console.log(reqData);
       switch(reqData.operator){
         case '+':
         case 'addition':
